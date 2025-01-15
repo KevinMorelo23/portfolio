@@ -4,9 +4,11 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Experience from '../components/experience.astro';
-import Proyects from '../components/proyects.astro';
+import Proyects from '../components/projects.astro';
 import Sobremi from '../components/Sobremi.astro';
 import Mensaje from '../components/mensaje.astro';
+import Projects from '../components/projects.astro';
+import Skills from '../components/skils.astro';
 ---
 
 <!doctype html>
@@ -20,18 +22,18 @@ import Mensaje from '../components/mensaje.astro';
 		<main>
 			<Header />
 		<section class="w-full mx-auto py-10">
-			<span class="text-gray-300 text-sm border rounded-full px-4 py-1 align-center">Listo para trabajar</span>
+			<span class="text-gray-300 text-sm border rounded-xl px-4 py-1 align-center hover:border-yellow-100 hover:text-yellow-100">Listo para trabajar</span>
 			<h1 class="text-white text-5xl font-bold flex flex-row  gap-x-4 pb-10 py-4">
 				Hola!!, Soy Kevin Morelo <span class="text-sm">co</span>
 			</h1>
 			
 			<h2 class="text-white text-xl opacity-80 text-wrap">
-				Ingeniero en Sistemas con bases desarrollo de páginas web y análisis de datos. Domino herramientas como Python, SQL, Power BI y frameworks como Laravel-Filament y astro.
+				Ingeniero en Sistemas con bases en desarrollo de páginas web y análisis de datos. Domino herramientas como Python, SQL, Power BI y frameworks como Laravel-Filament y astro.
 			</h2>
 			<ul class="flex gap-x-8 py-4 ">
 				
-				<a href="https://www.linkedin.com/in/kevin-morelo-07b292307/" target="_blank" rel="noopener noreferrer" class="text-gray-300 text-sm flex gap-x-2 items-center py-4 border rounded-full px-4 py-2" >
-					<svg  class="size-5"
+				<a href="https://www.linkedin.com/in/kevin-morelo-07b292307/" target="_blank" rel="noopener noreferrer" class="text-gray-300 text-sm flex gap-x-2 items-center py-2 border rounded-xl px-4 py-2 hover:text-blue-300 hover:border-blue-300 hover:underline" >
+					<svg  class="size-4"
 					width="256" height="256" 
 					xmlns="http://www.w3.org/2000/svg" 
 					preserveAspectRatio="xMidYMid" 
@@ -43,10 +45,11 @@ import Mensaje from '../components/mensaje.astro';
 					LinkedIn
 				</a>
 
-				<a href="mailto:kmorelo89@gamil.com"/Send mail class="text-gray-300 text-sm border rounded-full px-4 py-2 flex gap-x-2 items-center py-4">
+				<a 
+				href="mailto:kmorelo89@gmail.com" class="text-gray-300 text-sm flex gap-x-2 items-center py-2 border rounded-xl px-4 py-2 hover:text-blue-300 hover:border-blue-300 hover:underline">
 					<svg 
 					xmlns="http://www.w3.org/2000/svg"
-					class="size-6"
+					class="size-4"
 					width="24"  height="24"  
 					viewBox="0 0 24 24"  
 					fill="none"  
@@ -62,7 +65,8 @@ import Mensaje from '../components/mensaje.astro';
 			</ul>
 		</section>
 		<Experience />
-		<Proyects />
+		<Projects />
+		<Skills />
 		<Sobremi />
 		<Mensaje />
 		<Footer />
