@@ -1,0 +1,41 @@
+<section id="contacto" class="py-16  text-gray-300">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-3xl font-bold text-center mb-8">Contáctame</h2>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Información de contacto -->
+        <div class="flex flex-col gap-4">
+          <p class="text-lg">
+            <strong>Nombre:</strong> Kevin Morelo Negrette
+          </p>
+          <p class="text-lg">
+            <strong>Correo:</strong> 
+            <a href="mailto:kmorelo89@gmail.com" class="text-blue-400 hover:underline">kmorelo89@gmail.com</a>
+          </p>
+          <p class="text-lg">
+            <strong>Teléfono:</strong> 
+            <a href="tel:+573114079342" class="text-blue-400 hover:underline">311 407 9342</a>
+          </p>
+          <p class="text-lg">
+            <strong>Ubicación:</strong> Montería, Córdoba, Colombia
+          </p>
+        </div>
+        <!-- Formulario de contacto -->
+        <form action="https://formspree.io/f/xgvezyko" method="POST" class="w-full md:w-1/2  p-6 rounded-lg">
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Nombre</label>
+            <input type="text" id="name" name="name" class="w-full p-3 bg-black border border-gray-600 rounded focus:outline-none focus:border-blue-400" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block mb-2">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="w-full p-3 bg-black border border-gray-600 rounded focus:outline-none focus:border-blue-400" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2">Mensaje</label>
+            <textarea id="message" name="message" rows="4" class="w-full p-3 bg-black border border-gray-600 rounded focus:outline-none focus:border-blue-400" required></textarea>
+          </div>
+          <button type="submit" class="w-full border border-gray-600 bg-black text-white py-2 px-4 rounded hover:bg-blue-600">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
